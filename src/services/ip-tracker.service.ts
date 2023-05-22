@@ -18,7 +18,7 @@ export class TrackerService {
   }
 
   public getLocalIp() {
-    const apiURL = 'http://api.ipify.org/?format=json'
+    const apiURL = 'https://api.ipify.org/?format=json'
     const request = this.http.get<ILocalIP>(apiURL);
 
     return request;
