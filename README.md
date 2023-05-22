@@ -34,8 +34,6 @@ Users should be able to:
 
 ## My process
 
-
-
 ### Built with
 
 - [Angular 15](https://angular.io/) - A Front-end Framework using Typescript
