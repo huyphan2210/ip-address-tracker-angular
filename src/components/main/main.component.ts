@@ -61,7 +61,7 @@ export class Main implements AfterViewInit, OnInit {
       this.trackerService.ipTracker(this.input.value).subscribe((data: IPGeo) => {
         this.searchResults[0].content = data.ip;
         this.searchResults[1].content = `${data.location.city}, ${data.location.region}, ${data.location.country}`;
-        this.searchResults[2].content = data.location.timezone;
+        this.searchResults[2].content = "UTC " + data.location.timezone;
         this.searchResults[3].content = data.isp;
         if (this.map) {
           this.marker?.remove();

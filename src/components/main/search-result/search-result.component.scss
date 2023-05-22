@@ -6,3 +6,15 @@
     letter-spacing: 0.1rem;
   }
 }
+
+@media screen and (max-aspect-ratio: 1) {
+  .card {
+    &-title {
+      font-size: 0.6rem;
+    }
+
+    h2 {
+      font-size: 1rem;
+    }
+  }
+}
