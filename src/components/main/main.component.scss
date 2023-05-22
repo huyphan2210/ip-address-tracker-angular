@@ -1,24 +1,60 @@
 @import 'https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css';
 
 .ip-tracker {
-    display: grid;
-    place-items: center;
-    height: 30%;
-    background: url(../../assets/images/pattern-bg-desktop.png) no-repeat;
-    background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 30%;
+  background: url(../../assets/images/pattern-bg-desktop.png) no-repeat;
+  background-size: 100% 100%;
 
-    h1 {
+  h1 {
+    margin-block-start: 3rem;
+    font-size: 2rem;
+    color: white;
+  }
 
+  form {
+    display: flex;
+    width: 90%;
+    max-width: 640px;
+
+    input {
+      width: 100%;
+      padding: 1rem;
+      border-radius: 1rem 0 0 1rem;
+      font-size: 1rem;
+      outline: none;
     }
+
+    button {
+      border-radius: 0 1rem 1rem 0;
+      background-color: var(--very-dark-gray);
+      padding: 1rem;
+
+      &:hover {
+        background-color: var(--dark-gray);
+      }
+    }
+  }
 }
 
-.search-result {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.result {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  z-index: 1;
+  max-width: 960px;
+  width: calc(90% - 4rem);
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  padding: 2rem;
+  border-radius: 1rem;
 }
 
 .map {
-    height: 70%;
+  height: 70%;
 }

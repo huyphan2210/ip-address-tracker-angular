@@ -1,5 +1,13 @@
-<div class="ip-tracker">
+<section class="ip-tracker">
     <h1>IP Address Tracker</h1>
-</div>
-<div class="search-result"></div>
-<div #map class="map"></div>
+    <form (submit)="submitSearch($event)">
+      <input [formControl]="input" type="text" placeholder="Search for any IP Address or domain">
+      <button type="submit">
+        <img src="../../assets/images/icon-arrow.svg" alt="arrow" loading="lazy">
+      </button>
+    </form>
+</section>
+<section class="result">
+  <search-result class="search-result" *ngFor="let result of searchResults" [title]="result.title" [content]="result.content"></search-result>
+</section>
+<section #map class="map"></section>

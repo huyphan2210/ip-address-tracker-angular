@@ -1,0 +1,8 @@
+.card {
+  font-weight: 700;
+  &-title {
+    color: var(--dark-gray);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+  }
+}
