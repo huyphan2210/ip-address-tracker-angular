@@ -34,17 +34,18 @@ Users should be able to:
 
 ## My process
 
+
+
 ### Built with
 
 - [Angular 15](https://angular.io/) - A Front-end Framework using Typescript
 - CSS custom properties (SCSS)
 - [MapLibre](https://maplibre.org/) - A map controller, which is a JS library
-- [MapTiler](https://www.maptiler.com/)- A map tile provider
-
+- [MapTiler](https://www.maptiler.com/) - A map tile provider
 
 ### What I learned
 
-🎉Angular: Form, Reactive Form, NgModules, Injectable, How to call API using built-in HTTPClient, etc.
+🎉Angular: Form, Reactive Form, NgModules, Injectable, How to call API using built-in HTTPClient, etc.  
 🐱‍🏍 JS Libraries: How to use map in your web application.
 
 ## Author
